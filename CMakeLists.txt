@@ -2,6 +2,6 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 cmake_minimum_required(VERSION 3.10)
 
-project(bb_malloc)
+project(bb_malloc C) # Don't use a c++ compiler; this is pure C
 
 add_library(bb_malloc.o STATIC bb_malloc.c)
